@@ -1,0 +1,40 @@
+<div class="support_body_wrapper">
+		<div class="support_body_container">
+    <div class="ch_h-search-form_container pt-3 pb-3">
+      {{search instant=true placeholder='Search our FAQs'}}
+    </div>
+		<h1 class="support_category_heading">{{section.name}}</h1>
+		<div id="ch_breadcrumbs">
+			{{breadcrumbs}}	
+    </div>
+		<div class="support_sub-category_container pt-3">
+			{{#if section.articles}}
+				<ul class="article-list">
+					{{#each section.articles}}
+						<li {{#if promoted}} class="article-promoted" {{/if}}>
+					  	{{#if promoted}}
+					    	<span data-title="{{t 'promoted'}}">★</span>
+					    {{/if}}
+					    <a href="{{url}}">{{title}}</a>
+					  </li>
+					{{/each}}
+				</ul>
+			{{else}}
+				<i class="section-empty">
+					<a href="{{section.url}}">{{t 'empty'}}</a>
+				</i>
+			{{/if}}
+    </div>
+		<!--ul class="support_contact_links"-->
+    <button class="btn btn-secondary" onclick="toggleTicketForm()">
+        Contact Us
+    </button>
+      <!--
+      <li>
+        <a href="#" id="chat-with-agent" onclick="return SnapEngage.startLink();">
+          <i class="fa fa-comments"></i> Chat with an Agent
+        </a><br />(Sun-Fri 7AM to 4PM PST)
+			-->
+		{{pagination}}
+	</div>
+</div>

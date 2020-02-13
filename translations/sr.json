@@ -1,0 +1,15 @@
+{
+  "branding": "Brendirane",
+  "colors": "Boje",
+  "color_1": "Boja 1",
+  "color_2": "Boja 2",
+  "color_3": "Boja 3",
+  "color_4": "Boja 4",
+  "color_5": "Boja 5",
+  "fonts": "Fonte",
+  "font_1": "Font 1",
+  "font_2": "Font 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

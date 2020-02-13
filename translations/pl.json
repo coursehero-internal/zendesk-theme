@@ -1,0 +1,15 @@
+{
+  "branding": "Oznaczenia marki",
+  "colors": "Kolory",
+  "color_1": "Kolor 1",
+  "color_2": "Kolor 2",
+  "color_3": "Kolor 3",
+  "color_4": "Kolor 4",
+  "color_5": "Kolor 5",
+  "fonts": "Czcionki",
+  "font_1": "Czcionka 1",
+  "font_2": "Czcionka 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "To ustawienie miało nieprawidłową wartość koloru. Jeśli chcesz użyć tego koloru, ustaw jego prawidłową wartość szesnastkową."
+}

@@ -1,0 +1,15 @@
+{
+  "branding": "برندسازی",
+  "colors": "رنگ ها",
+  "color_1": "رنگ ۱",
+  "color_2": "رنگ ۲",
+  "color_3": "رنگ ۳",
+  "color_4": "رنگ ۴",
+  "color_5": "رنگ ۵",
+  "fonts": "قلم ها",
+  "font_1": "قلم ۱",
+  "font_2": "قلم ۲",
+  "logo": "لوگو",
+  "favicon": "Favicon",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

@@ -1,0 +1,15 @@
+{
+  "branding": "Branding",
+  "colors": "Colori",
+  "color_1": "Colore 1",
+  "color_2": "Colore 2",
+  "color_3": "Colore 3",
+  "color_4": "Colore 4",
+  "color_5": "Colore 5",
+  "fonts": "Font",
+  "font_1": "Font 1",
+  "font_2": "Font 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "In precedenza, questa impostazione è stata impostata su un valore di colore non valido. Se desideri usare questo colore, imposta un valore di colore esadecimale valido."
+}

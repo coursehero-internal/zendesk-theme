@@ -1,0 +1,15 @@
+{
+  "branding": "Elemente de marcă",
+  "colors": "Culori",
+  "color_1": "Culoare 1",
+  "color_2": "Culoare 2",
+  "color_3": "Culoare 3",
+  "color_4": "Culoare 4",
+  "color_5": "Culoare 5",
+  "fonts": "Fonturi",
+  "font_1": "Font 1",
+  "font_2": "Font 2",
+  "logo": "Siglă",
+  "favicon": "Favicon",
+  "invalid_color_setting": "Această setare a fost stabilită anterior la o valoare nevalidă pentru culoare. Dacă intenționați să folosiți această culoare, setați valoarea la o valoare hexazecimală validă pentru culoare."
+}

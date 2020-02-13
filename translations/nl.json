@@ -1,0 +1,15 @@
+{
+  "branding": "Branding",
+  "colors": "Kleuren",
+  "color_1": "Kleur 1",
+  "color_2": "Kleur 2",
+  "color_3": "Kleur 3",
+  "color_4": "Kleur 4",
+  "color_5": "Kleur 5",
+  "fonts": "Lettertypen",
+  "font_1": "Lettertype 1",
+  "font_2": "Lettertype 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "Deze instelling is eerder op een ongeldige kleurwaarde ingesteld. Als u deze kleur wilt gebruiken, stel de waarde dan in op een geldige hexadecimale kleurwaarde."
+}

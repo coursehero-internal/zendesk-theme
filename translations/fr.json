@@ -1,0 +1,15 @@
+{
+  "branding": "Gestion de la marque",
+  "colors": "Couleurs",
+  "color_1": "Couleur 1",
+  "color_2": "Couleur 2",
+  "color_3": "Couleur 3",
+  "color_4": "Couleur 4",
+  "color_5": "Couleur 5",
+  "fonts": "Polices",
+  "font_1": "Police 1",
+  "font_2": "Police 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "Ce paramètre était précédemment configuré sur une valeur de couleur non valide. Si vous projetez d’utiliser cette couleur, configurez cette valeur sur une valeur de couleur hexadécimale valide."
+}

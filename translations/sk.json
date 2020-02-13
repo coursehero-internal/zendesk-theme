@@ -1,0 +1,15 @@
+{
+  "branding": "Branding",
+  "colors": "Farby",
+  "color_1": "Farba 1",
+  "color_2": "Farba 2",
+  "color_3": "Farba 3",
+  "color_4": "Farba 4",
+  "color_5": "Farba 5",
+  "fonts": "Písma",
+  "font_1": "Písmo 1",
+  "font_2": "Písmo 2",
+  "logo": "Logo",
+  "favicon": "Ikona",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

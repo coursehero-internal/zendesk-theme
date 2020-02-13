@@ -1,0 +1,15 @@
+{
+  "branding": "Penjenamaan",
+  "colors": "Warna",
+  "color_1": "Warna 1",
+  "color_2": "Warna 2",
+  "color_3": "Warna 3",
+  "color_4": "Warna 4",
+  "color_5": "Warna 5",
+  "fonts": "Fon",
+  "font_1": "Fon 1",
+  "font_2": "Fon 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

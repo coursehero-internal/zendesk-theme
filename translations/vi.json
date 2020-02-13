@@ -1,0 +1,15 @@
+{
+  "branding": "Thương hiệu",
+  "colors": "Màu sắc",
+  "color_1": "Màu 1",
+  "color_2": "Màu 2",
+  "color_3": "Màu 3",
+  "color_4": "Màu 4",
+  "color_5": "Màu 5",
+  "fonts": "Phông chữ",
+  "font_1": "Phông chữ 1",
+  "font_2": "Phông chữ 2",
+  "logo": "Biểu tượng",
+  "favicon": "Biểu tượng yêu thích",
+  "invalid_color_setting": "Thiết lập này trước đây đã được đặt thành một giá trị màu không hợp lệ. Nếu bạn định sử dụng màu này, vui lòng đặt giá trị thành một giá trị màu thập lục phân hợp lệ."
+}

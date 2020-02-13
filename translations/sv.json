@@ -1,0 +1,15 @@
+{
+  "branding": "Branding",
+  "colors": "Färger",
+  "color_1": "Färg 1",
+  "color_2": "Färg 2",
+  "color_3": "Färg 3",
+  "color_4": "Färg 4",
+  "color_5": "Färg 5",
+  "fonts": "Typsnitt",
+  "font_1": "Typsnitt 1",
+  "font_2": "Typsnitt 2",
+  "logo": "Logotyp",
+  "favicon": "Favikon",
+  "invalid_color_setting": "Denna inställning var tidigare inställd på ett felaktigt färgvärde. Om du vill använda denna färg måste du ange värdet som ett giltigt hexadecimalt färgvärde."
+}

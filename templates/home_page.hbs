@@ -1,0 +1,142 @@
+<!-- Yellow Banner Container -->
+
+<!--<div class=”holiday-notice-wrapper”>
+<div class="fa fa-exclamation-circle support_notification_callout"></i> <b> Our Phone and Chat tool service providers are currently experiencing technical issues. Please reach out to us at support@coursehero.com to sumbit an email request and we will get back to you as soon as possible, Thank you for your patience!
+  </div-->
+  
+<!-- End of Yellow Banner Container -->
+  
+<!-- <iframe id="customChatIframeContainer" frameborder="0" src="https://coursehero.com/support-chat" class="customChatIframeContainer"
+onload="resizeCrossDomainIframe('customChatIframeContainer', 'https://coursehero.com');"
+></iframe> -->
+      
+<div class="customerSupportTopContainer">
+  <div class="container">
+    <h1 class="hero-2 text-center pt-4 pb-1">
+      <span>Customer Support</span>
+    </h1>
+    <p class="small text-center pb-1">
+      Need help with Course Hero? Browse helpful resources below or  	
+      <a href="#" onclick="toggleTicketForm()">
+         contact us here.
+      </a>
+    </p>
+    <div class="ch_h-search-form_container pt-3 pb-3">
+          {{search instant=true placeholder='Search our FAQs'}}
+    </div>  
+  </div>
+</div>
+<div class="container">
+  <main class="support_body_container">
+    <div id="dynamic_generation" class="grid">
+      <ul class="category-list">
+        {{#each categories}}
+          <li><a href="{{url}}">{{name}}</a></li>
+        {{/each}}
+        {{pagination}}
+      </ul>
+    </div>
+    
+ 	</main>
+</div>
+<!-- 
+<section id="support_tutorials_section" class="support_section_wrapper">
+  
+  <div class="support_section_container">
+    <h3 class="support_section_title tutorials"><span>Top Video Tutorials</span></h3>
+    <p class="support_section_caption homepage">
+      Explore our helpful how-tos. Learn how to search for materials you need, pause or cancel subscription, and upload documents to earn rewards.
+    </p>
+    <div class="support_tutorial_carousel">
+      <div>
+        <a class="support_tutorial_link active tablet-and-larger" href="#" data-href="//player.vimeo.com/video/138907416?byline=0&amp;portrait=0&amp;color=0aaae7&amp;autoplay=1">
+          How to Search
+        </a>
+        <a href="https://vimeo.com/138907416" class="support_tutorial_link phone"><i class="fa fa_left fa-video-camera"></i> How to Search</a>
+      </div>	
+      <div>
+        <a class="support_tutorial_link tablet-and-larger" href="#" data-href="//player.vimeo.com/video/138770526?byline=0&amp;portrait=0&amp;color=0aaae7&amp;autoplay=1">How to Pause Membership</a>
+        <a href="https://vimeo.com/138770526" class="support_tutorial_link phone"><i class="fa fa_left fa-video-camera"></i> How to Pause Membership</a>
+      </div>
+      <div>	
+        <a class="support_tutorial_link tablet-and-larger" href="#" data-href="//player.vimeo.com/video/138770527?byline=0&amp;portrait=0&amp;color=0aaae7&amp;autoplay=1">How to Cancel Subscription</a>
+        <a href="https://vimeo.com/138770527" class="support_tutorial_link phone"><i class="fa fa_left fa-video-camera"></i> How to Cancel Subscription</a>
+      </div>
+      <div>	
+        <a class="support_tutorial_link tablet-and-larger" href="#" data-href="//player.vimeo.com/video/138917136?byline=0&amp;portrait=0&amp;color=0aaae7&amp;autoplay=1">Basic and Advanced Questions</a>
+        <a href="https://vimeo.com/138917136" class="support_tutorial_link phone"><i class="fa fa_left fa-video-camera"></i> Basic and Advanced Questions</a>
+      </div>
+    </div>
+    <div class="support_tutorial_videos home">
+      <iframe id="support_tutorial_video" src="https://player.vimeo.com/video/138907416?byline=0&amp;portrait=0&amp;color=0aaae7" width="500" height="313" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+</section> 
+-->
+
+
+<script>
+  smoothScroll.init();
+
+  $(".support_tutorial_link").click(function(e){
+    $("#support_tutorial_video").attr("src", $(this).attr("data-href"));
+    $(".support_tutorial_link").removeClass("active");
+    $(this).addClass("active");
+    e.preventDefault();
+  });
+
+  enquire.register("screen and (min-width:768px)", {
+    match : function() {
+      $(".support_tutorial_carousel").owlCarousel({
+        items : 4,
+        itemsTablet: [768,3],
+        pagination: false,
+        navigation: true,
+        navigationText : [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+        ],
+        });
+      },
+    unmatch: function(){
+    $(".support_tutorial_carousel").data('owlCarousel').destroy();
+    }
+  });
+
+  $(document).ready(function(){
+  	homepageGeneration();
+    $(".support_tutorial_videos").fitVids();
+    $(".support_tutorial_link.phone").magnificPopup({
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+</script>
+
+<script type='text/javascript'>
+  $(window).on('hashchange', function (e) {
+  if (window.location.hash === '#/contact-us') {
+    toggleTicketForm();
+	  window.location.hash = '';
+    }
+});
+
+</script>
+
+<!-- <script type="text/javascript">
+function resizeCrossDomainIframe(id, other_domain) {
+    var iframe = document.getElementById(id);
+  	console.log(iframe);
+    window.addEventListener('message', function(event) {
+        if (event.origin !== other_domain) return; // only accept messages from the specified domain
+        if (isNaN(event.data)) return; // only accept something which can be parsed as a number
+        var height = parseInt(event.data);
+  		console.log(height);
+          //iframe.height = height + "px";
+        iframe.style.height = height + "px";
+    }, false);
+  }
+</script> -->

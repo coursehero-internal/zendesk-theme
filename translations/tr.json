@@ -1,0 +1,15 @@
+{
+  "branding": "Markaya Uyarlama",
+  "colors": "Renkler",
+  "color_1": "Renk 1",
+  "color_2": "Renk 2",
+  "color_3": "Renk 3",
+  "color_4": "Renk 4",
+  "color_5": "Renk 5",
+  "fonts": "Fontlar",
+  "font_1": "Yazı tipi 1",
+  "font_2": "Yazı tipi 2",
+  "logo": "Logo",
+  "favicon": "Site simgesi",
+  "invalid_color_setting": "Bu ayar daha önce geçersiz bir renk değerine ayarlandı. Bu rengi kullanmak istiyorsanız lütfen değeri geçerli bir onaltılık renk değerine ayarlayın."
+}

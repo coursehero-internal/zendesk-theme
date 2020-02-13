@@ -1,0 +1,15 @@
+{
+  "branding": "Blagovne znamke",
+  "colors": "Barve",
+  "color_1": "Color 1",
+  "color_2": "Color 2",
+  "color_3": "Color 3",
+  "color_4": "Color 4",
+  "color_5": "Color 5",
+  "fonts": "Pisava",
+  "font_1": "Font 1",
+  "font_2": "Font 2",
+  "logo": "Logotip",
+  "favicon": "Bljižnica",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

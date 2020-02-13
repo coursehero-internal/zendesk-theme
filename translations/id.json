@@ -1,0 +1,15 @@
+{
+  "branding": "Merek",
+  "colors": "Warna",
+  "color_1": "Warna 1",
+  "color_2": "Warna 2",
+  "color_3": "Warna 3",
+  "color_4": "Warna 4",
+  "color_5": "Warna 5",
+  "fonts": "Font",
+  "font_1": "Font 1",
+  "font_2": "Font 2",
+  "logo": "Logo",
+  "favicon": "Favicon (Ikon favorit)",
+  "invalid_color_setting": "Pengaturan ini sebelumnya diatur ke nilai warna yang tidak valid. Jika Anda bermaksud untuk menggunakan warna ini, harap atur nilainya ke nilai warna heksadesimal yang valid."
+}

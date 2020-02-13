@@ -1,0 +1,15 @@
+{
+  "branding": "Značka",
+  "colors": "Barvy",
+  "color_1": "Barva 1",
+  "color_2": "Barva 2",
+  "color_3": "Barva 3",
+  "color_4": "Barva 4",
+  "color_5": "Barva 5",
+  "fonts": "Písma",
+  "font_1": "Písmo 1",
+  "font_2": "Písmo 2",
+  "logo": "Logo",
+  "favicon": "Favikona",
+  "invalid_color_setting": "Toto nastavení bylo dříve nastavené na neplatnou hodnotu barvy. Pokud chcete tuto barvu používat, nastavte tuto hodnotu na platnou hexadecimální hodnotu barvy."
+}

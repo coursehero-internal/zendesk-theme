@@ -1,0 +1,15 @@
+{
+  "branding": "Personalização",
+  "colors": "Cores",
+  "color_1": "Cor 1",
+  "color_2": "Cor 2",
+  "color_3": "Cor 3",
+  "color_4": "Cor 4",
+  "color_5": "Cor 5",
+  "fonts": "Fontes",
+  "font_1": "Fonte 1",
+  "font_2": "Fonte 2",
+  "logo": "Logotipo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "A configuração estava definida como um valor de cor inválido. Se você pretende usar essa cor, defina o valor com um valor de cor hexadecimal válido."
+}

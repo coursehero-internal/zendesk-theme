@@ -1,0 +1,15 @@
+{
+  "branding": "Brends",
+  "colors": "Krāsas",
+  "color_1": "Krāsa 1",
+  "color_2": "Krāsa 2",
+  "color_3": "Krāsa 3",
+  "color_4": "Krāsa 4",
+  "color_5": "Krāsa 5",
+  "fonts": "Fonts",
+  "font_1": "Fonts 1",
+  "font_2": "Fonts 2",
+  "logo": "Logotips",
+  "favicon": "Favikona",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

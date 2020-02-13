@@ -1,0 +1,15 @@
+{
+  "branding": "Branding",
+  "colors": "Farben",
+  "color_1": "Farbe 1",
+  "color_2": "Farbe 2",
+  "color_3": "Farbe 3",
+  "color_4": "Farbe 4",
+  "color_5": "Farbe 5",
+  "fonts": "Schriftarten",
+  "font_1": "Schriftart 1",
+  "font_2": "Schriftart 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "Diese Einstellung war zuvor auf einen ungültigen Farbwert gesetzt. Wenn Sie diese Farbe verwenden möchten, müssen Sie einen gültigen Hexadezimalwert eingeben."
+}

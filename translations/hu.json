@@ -1,0 +1,15 @@
+{
+  "branding": "Márkaépítés",
+  "colors": "Színek",
+  "color_1": "1. szín",
+  "color_2": "2. szín",
+  "color_3": "3. szín",
+  "color_4": "4. szín",
+  "color_5": "5. szín",
+  "fonts": "Fontok",
+  "font_1": "1. font",
+  "font_2": "2. font",
+  "logo": "Embléma",
+  "favicon": "Favicon/Weblapikon",
+  "invalid_color_setting": "Ez a beállítás korábban egy érvénytelen színértékre volt beállítva. Ha ezt a színt szándékozik használni, kérjük, állítsa be az értéket egy érvényes hexadecimális színértékre."
+}

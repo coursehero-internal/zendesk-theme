@@ -1,0 +1,15 @@
+{
+  "branding": "Брендування",
+  "colors": "Кольори",
+  "color_1": "Колір 1",
+  "color_2": "Колір 2",
+  "color_3": "Колір 3",
+  "color_4": "Колір 4",
+  "color_5": "Колір 5",
+  "fonts": "Шрифти",
+  "font_1": "Шрифт 1",
+  "font_2": "Шрифт 2",
+  "logo": "Логотип",
+  "favicon": "Іконка сайту",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

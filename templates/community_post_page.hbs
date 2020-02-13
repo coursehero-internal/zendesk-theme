@@ -1,0 +1,204 @@
+<nav class="sub-nav clearfix">
+  <h4 class="community-heading">
+    {{t 'community'}}
+  </h4>
+  <div class="ch_h-search-form_container pt-3 pb-3">
+    {{search instant=true placeholder='Search our FAQs'}}
+  </div>
+</nav>
+
+<nav class="community-nav">
+  <ul>
+    <li>{{link 'topics'}}</li>
+    <li>{{link 'posts'}}</li>
+    <li>{{link 'new_post' role='button'}}</li>
+  </ul>
+</nav>
+
+<div class="clearfix">
+  <div class="main-column">
+
+    <header class="question-header">
+      <h3 class="question-heading">
+        {{t 'post'}}
+      </h3>
+      <span class="question-meta">
+        {{t 'follower_count' count=post.follower_count}}
+      </span>
+      <span>{{subscribe}}</span>
+    </header>
+
+    <div class="question {{#if post.featured}} post-featured {{/if}} {{#if post.pinned}} post-pinned {{/if}}">
+      <ul class="question-topic-list">
+        <li><a href="{{topic.url}}">{{topic.name}}</a></li>
+      </ul>
+      <div class="vote">
+        <div class="vote-sum">
+          {{post.vote 'sum'}}
+        </div>
+        <div class="vote-controls">
+          {{post.vote 'up' class='vote-up' role='button'}}
+          {{post.vote 'down' class='vote-down' role='button'}}
+        </div>
+      </div>
+      <div class="question-avatar {{#if post.author.agent}} question-avatar-agent {{/if}}">
+        <img src="{{post.author.avatar_url}}" alt="Avatar" />
+      </div>
+      <div class="question-body">
+        <h1 class="question-title">{{post.title}}</h1>
+        <div class="question-text markdown">
+          {{post.details}}
+        </div>
+        <div class="question-meta">
+          <span class="question-author">
+            {{#link 'user_profile' id=post.author.id}}
+              {{post.author.name}}
+            {{/link}}
+          </span>
+          <span class="question-published">
+            {{date post.created_at}}
+          </span>
+          <span class="question-share">
+            <span class="share-label" aria-selected="false">
+              {{t 'share'}}
+            </span>
+            {{share}}
+          </span>
+          {{! Show the post status, if any }}
+          {{#is post.status 'none'}}
+          {{else}}
+            <span class="post-{{post.status_dasherized}}">{{post.status_name}} </span>
+          {{/is}}
+        </div>
+        <div class="question-controls">
+          {{post.actions}}
+        </div>
+      </div>
+    </div>
+
+    {{#each comments}}
+      {{#if official}}
+        <article class="answer clearfix" id="{{anchor}}">
+          <h2 class="answer-official-heading">{{t 'official_comment'}}</h2>
+          <div class="answer-avatar {{#if author.agent}} answer-avatar-agent {{/if}}">
+            <img src="{{author.avatar_url}}" alt="Avatar" />
+          </div>
+          <div class="answer-official-body">
+            <div class="answer-text markdown">
+              {{body}}
+            </div>
+            <div class="answer-meta">
+              <span class="answer-author">
+                {{#link 'user_profile' id=author.id}}
+                  {{author.name}}
+                {{/link}}
+              </span>
+              <span class="answer-published">
+                {{date created_at}}
+              </span>
+              <span class="answer-share">
+                <span class="share-label" aria-selected="false">
+                  {{t 'share'}}
+                </span>
+                {{share}}
+              </span>
+            </div>
+            <div class="answer-controls">
+              {{actions}}
+            </div>
+          </div>
+        </article>
+      {{/if}}
+    {{/each}}
+
+    <p>{{comment_callout}}</p>
+
+    {{#form 'comment' class='answer-form'}}
+      <div class="answer-avatar">
+        {{user_avatar class='user-avatar'}}
+      </div>
+      <div class="answer-body">
+        {{wysiwyg 'body'}}
+        <div class="answer-form-controls clearfix">
+          <div class="pull-left">
+            {{checkbox 'official'}}
+            {{label 'official'}}
+          </div>
+          {{input type='submit'}}
+        </div>
+      </div>
+    {{/form}}
+
+    {{#if comments}}
+
+      {{!--
+      ** NEW COMMUNITY SNIPPET **
+      Please uncomment these lines if you want to allow your users to sort comments.
+      <div class="comment-sorter">
+        {{#each comment_sorters}}
+          <a aria-selected="{{selected}}" href="{{url}}">{{name}}</a>
+        {{/each}}
+      </div>
+      --}}
+
+      <h3 class="answer-list-heading">
+        {{t 'comments_count' count=post.comment_count}}
+      </h3>
+
+      <section class="answers">
+        {{#each comments}}
+          {{#unless official}}
+            <article id="{{anchor}}" class="answer">
+              <div class="vote">
+                <div class="vote-sum">
+                  {{vote 'sum'}}
+                </div>
+                <div class="vote-controls">
+                  {{vote 'up' class='vote-up' role='button'}}
+                  {{vote 'down' class='vote-down' role='button'}}
+                </div>
+              </div>
+              <div class="answer-avatar {{#if author.agent}} answer-avatar-agent {{/if}}">
+                <img alt="Avatar" src="{{author.avatar_url}}">
+              </div>
+              <div class="answer-body">
+                <div class="answer-text markdown">
+                  {{body}}
+                </div>
+                <div class="answer-meta">
+                  <span class="answer-author">
+                    {{#link 'user_profile' id=author.id}}
+                      {{author.name}}
+                    {{/link}}
+                  </span>
+                  <span class="answer-published">
+                    {{date created_at timeago=true}}
+                  </span>
+                  <span class="answer-votes">
+                    {{vote_sum}} {{t 'vote' count=vote_sum}}
+                  </span>
+                  <span class="answer-share">
+                    <span class="share-label" aria-selected="false">
+                      {{t 'share'}}
+                    </span>
+                    {{share}}
+                  </span>
+                </div>
+                <div class="answer-controls">
+                  {{actions}}
+                </div>
+              </div>
+            </article>
+          {{/unless}}
+        {{/each}}
+      </section>
+
+    {{/if}}
+
+    {{pagination}}
+
+  </div>
+
+  <div class="side-column">
+  </div>
+</div>

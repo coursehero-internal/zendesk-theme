@@ -1,0 +1,15 @@
+{
+  "branding": "Brandingas",
+  "colors": "Spalvos",
+  "color_1": "Spalva 1",
+  "color_2": "Spalva 2",
+  "color_3": "Spalva 3",
+  "color_4": "Spalva 4",
+  "color_5": "Spalva 5",
+  "fonts": "Šriftas",
+  "font_1": "Šriftas 1",
+  "font_2": "Šriftas 2",
+  "logo": "Logotipas",
+  "favicon": "Favicon",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

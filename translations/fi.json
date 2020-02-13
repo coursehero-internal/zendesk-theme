@@ -1,0 +1,15 @@
+{
+  "branding": "Brändäys",
+  "colors": "Värit",
+  "color_1": "Väri 1",
+  "color_2": "Väri 2",
+  "color_3": "Väri 3",
+  "color_4": "Väri 4",
+  "color_5": "Väri 5",
+  "fonts": "Fontit",
+  "font_1": "Fontti 1",
+  "font_2": "Fontti 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "Tälle asetukselle valittiin aikaisemmin virheellinen väriarvo. Jos aiot käyttää tätä väriä, aseta arvoksi kelvollinen heksadesimaaliväriarvo."
+}

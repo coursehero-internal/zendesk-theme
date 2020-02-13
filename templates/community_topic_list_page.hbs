@@ -1,0 +1,53 @@
+<nav class="sub-nav clearfix">
+  <h4 class="community-heading">
+    {{t 'community'}}
+  </h4>
+  <div class="ch_h-search-form_container pt-3 pb-3">
+    {{search instant=true placeholder='Search our FAQs'}}
+  </div>
+</nav>
+
+<nav class="community-nav">
+  <ul>
+    <li>{{t 'topics'}}</li>
+    <li>{{link 'posts'}}</li>
+    <li>{{link 'new_post' role='button'}}</li>
+  </ul>
+</nav>
+
+<div class="clearfix">
+  <div class="main-column">
+
+    <nav class="community-sub-nav">
+      <ul>
+        <li>{{t 'all'}}</li>
+      </ul>
+    </nav>
+
+    {{#if topics}}
+      <ul class="topic-list">
+        {{#each topics}}
+          <li class="topic">
+            <h3 class="topic-title">
+              {{#if internal}}
+                <span class="visibility-internal" data-title="{{t 'internal'}}">
+                  <span class="visibility-internal-icon"></span>
+                </span>
+              {{/if}}
+              <a href="{{url}}">{{name}}</a>
+            </h3>
+            <span class="topic-meta">
+              <span>{{t 'post_count' count=post_count}}</span>
+              <span>{{t 'follower_count' count=follower_count}}</span>
+            </span>
+          </li>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>{{t 'no_content'}}</p>
+    {{/if}}
+
+    {{pagination}}
+
+  </div>
+</div>

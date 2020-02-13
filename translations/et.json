@@ -1,0 +1,15 @@
+{
+  "branding": "Bränding",
+  "colors": "Värvid",
+  "color_1": "Värv 1",
+  "color_2": "Värv 2",
+  "color_3": "Värv 3",
+  "color_4": "Värv 4",
+  "color_5": "Värv 5",
+  "fonts": "Šriftid",
+  "font_1": "Šrift 1",
+  "font_2": "Šrift 2",
+  "logo": "Logo",
+  "favicon": "Favicon",
+  "invalid_color_setting": "This setting was previously set to an invalid color value. If you intend to use this color, please set the value to a valid hexadecimal color value."
+}

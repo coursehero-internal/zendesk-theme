@@ -11,65 +11,18 @@
   </a>
   <ul class="ch_nav_group isBrowseMenu">
   	<li>
-  		<a class="ch_nav_action isHamburgerMenu" href="#">
+  		<a class="ch_nav_action isHamburgerMenu" href="#" id="ch_hamburgerMenu">
         <span class="bar"></span>
         <span></span>
       </a>
-  		<div class="ch_subNav_panel">
+  		<div class="ch_subNav_panel" id="ch_subNav_panel">
   			<ul class="ch_mobileNav_group">
-  				<li class="hasChildren">
-          <a href="https://www.coursehero.com/study-materials/" title="Study Resources">Find Study Resources</a>
-          <ul class="isHidden">
-        		<li class="oneLevelUpAction">
-              <a href="#"><i class="fa fa-angle-left"></i> Main Menu</a>
-            </li>
-        		<li>
-              <a href="https://www.coursehero.com/study-materials/" rel="" title="by School">by School</a>
-            </li>
-          	<li>
-              <a href="https://www.coursehero.com/lit/" rel="" title="by Literature Guides">by Literature Guides</a>
-            </li>
-        		<li>
-              <a href="https://www.coursehero.com/subjects/" rel="" title="by Subject">by Subject</a>
-            </li>
-      		</ul>
-  				<a href="https://www.coursehero.com/tutors/homework-help/" title="Tutoring Help">Get instant Tutoring Help</a>
-  				<ul class="isHidden">
-            <li class="oneLevelUpAction">
-              <a href="#"><i class="fa fa-angle-left"></i> Main Menu</a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/free-access/" rel="" title="Earn Free Access">
-                Earn Free Access
-              </a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/upload/" rel="nofollow" title="Upload Documents">
-                Upload Documents
-              </a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/referrals/" rel="nofollow" title="Refer your Friends">
-                Refer your Friends
-              </a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/earn-money/" rel="" title="Earn Money">
-                Earn Money
-              </a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/scholarships/" rel="" title="Apply for Scholarship">
-                Apply for Scholarship
-              </a>
-            </li>
-            <li>
-              <a href="https://www.coursehero.com/qa/expert/landing.php" rel="" title="Become a Tutor">
-                Become a Tutor
-              </a>
-            </li>
-        	</ul>
-				</li>
+        <li class="hasChildren">
+          <a href="https://www.coursehero.com/study-materials/" class="" title="Study Resources">Study Resources</a>
+  				<a href="https://www.coursehero.com/tutors/homework-help/" title="Expert Tutors">Expert Tutors</a>
+          <a href="https://www.coursehero.com/free-access/" class="" title="Contributing">Contributing</a>
+          <a href="https://www.coursehero.com/educators/" class="" title="For Educators" id="ch_areYouTeacher_button">For Educators</a>
+        </li>
   			<li class="ch_mobileAppLinks">
           <a href="https://itunes.apple.com/app/apple-store/id922208952?pt=108036802&amp;ct=nav_menu&amp;mt=8" class="ch-external-link" target="_blank" rel="nofollow">
             <img alt="app store button" class="ch_mobilePromotion_button" src="https://www.coursehero.com/assets/img/header/appstore.png" height="30">
@@ -196,6 +149,11 @@
   })
 </script-->
 <script>
+  $("#ch_hamburgerMenu").click(() => {
+    $("#ch_hamburgerMenu").toggleClass("dropdownIsActive")
+    $("#ch_subNav_panel").toggleClass("dropdownIsActive")
+  })
+
   jQuery("#byBook").hover(
   	function() {
   		jQuery("#byBookCategories").addClass("isDisplayed");

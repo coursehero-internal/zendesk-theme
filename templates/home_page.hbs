@@ -117,6 +117,15 @@ onload="resizeCrossDomainIframe('customChatIframeContainer', 'https://coursehero
 </script>
 
 <script type='text/javascript'>
+  $(window).on('load', function (e) {
+    if (window.location.hash === '#/contact-us') {
+      toggleTicketForm();
+	    window.location.hash = '';
+    }
+  });
+</script>
+
+<script>
   $(window).on('hashchange', function (e) {
   if (window.location.hash === '#/contact-us') {
     toggleTicketForm();
